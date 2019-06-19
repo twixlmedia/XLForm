@@ -136,7 +136,7 @@ NSString * const XLHidePredicateCacheKey = @"hidePredicateCache";
         NSBundle *bundle = [NSBundle mainBundle];
         NSString *cellClassString = cellClass;
         NSString *cellResource = nil;
-        NSBundle *bundleForCaller = [NSBundle bundleForClass:self.class];
+        NSBundle *bundleForCaller = [NSBundle bundleForClass:formController.class];
         
         NSAssert(cellClass, @"Not defined XLFormRowDescriptorType: %@", self.rowType ?: @"");
         
